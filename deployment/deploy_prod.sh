@@ -1,6 +1,6 @@
 #!/bin/sh
  
-ssh surajk@127.0.0.1 <<EOF
+ 
   cd djtrump
   git pull
   source /opt/envs/djtrump/bin/activate
@@ -8,4 +8,3 @@ ssh surajk@127.0.0.1 <<EOF
   ./manage.py migrate
   sudo supervisorctl restart djtrump
   exit
-EOF
